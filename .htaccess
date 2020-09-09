@@ -1,12 +1,12 @@
 # mod_rewrite starts here
-
+Options +FollowSymLinks
 RewriteEngine on
 
 # does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
 
+RewriteCond %{REQUEST_URI} !(.*)html
+RewriteRule ^(.*)$ html/$1 [L]
+
 RewriteCond %{REQEUSTED_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-RewriteCond %{REQUEST_URI} !^/html/.*$
-RewriteRule ^(.*)$ /test/$1 [L]
