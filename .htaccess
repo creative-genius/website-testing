@@ -2,11 +2,6 @@
 Options +FollowSymLinks
 RewriteEngine on
 
-# does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
-
-# 301 Redirect Entire Directory
-RedirectMatch 301 /html(.*) //$1
-
 # Prevent viewing of .htaccess file
 <Files .htaccess>
 order allow,deny
@@ -15,6 +10,9 @@ deny from all
 
 # Prevent directory listings
 Options All -Indexes
+
+
+# does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
 
 RewriteCond %{REQEUSTED_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
