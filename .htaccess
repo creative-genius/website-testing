@@ -7,3 +7,6 @@ RewriteEngine on
 RewriteCond %{REQEUSTED_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteCond %{REQUEST_URI} !^/html/.*$
+RewriteRule ^(.*)$ /test/$1 [L]
