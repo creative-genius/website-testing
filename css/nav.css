@@ -1,0 +1,53 @@
+.navbar a {
+    color: #000000;
+    /*Standard color*/
+}
+
+.navbar a:hover {
+    color: #888899;
+    /*Color when mouse hover*/
+}
+
+body {
+    margin: 0;
+}
+
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 6px;
+}
+
+.navli:not(.home){
+    float: right;
+}
+
+.home {
+    float: left;
+}
+
+.navli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.navli p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.navactive {
+    background-color: #4CAF50;
+}
