@@ -1,12 +1,5 @@
 # mod_rewrite starts here
-Options +FollowSymLinks
 RewriteEngine on
-
-# Prevent viewing of .htaccess file
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
 
 # Prevent directory listings
 Options All -Indexes
@@ -17,3 +10,8 @@ Options All -Indexes
 RewriteCond %{REQEUSTED_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+RewriteCond %{REQEUSTED_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\index -f
+RewriteRule ^(.*)$ $1/ [NC,L]
