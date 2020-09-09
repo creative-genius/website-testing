@@ -7,6 +7,7 @@
 > Tasks & ToDo (Not in order 'cause lazyness):
 >   - [x] Folder structure
 >   - [x] Favicon
+>   - [x] Navbar
 >   - [ ] css (Working...)
 >   - [ ] Layout
 >   - [ ] transfer old stuff
