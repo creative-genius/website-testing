@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/support.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
 
     <title>Support</title>
 </head>
@@ -17,26 +17,36 @@
     <div class="navbar url">
         <ul class="navul">
 
-        <li class="navli"><p>
-            <a href="https://thalia.webuntis.com/WebUntis/?school=brgkepler#/basic/main" target="_blank">
-                webuntis</a>
-        </p></li>
+            <li class="navli">
+                <p>
+                    <a href="https://thalia.webuntis.com/WebUntis/?school=brgkepler#/basic/main" target="_blank">
+                        webuntis</a>
+                </p>
+            </li>
 
-        <li class="navli"><p>
-            <a href="https://www.office.com/" target="_blank"> webmail</a>
-        </p></li>
+            <li class="navli">
+                <p>
+                    <a href="https://www.office.com/" target="_blank"> webmail</a>
+                </p>
+            </li>
 
-        <li class="navli"><p>
-            <a href="https://www.sokrates-bund.at/BRZPROD/" target="_blank"> sokrates</a>
-        </p></li>
+            <li class="navli">
+                <p>
+                    <a href="https://www.sokrates-bund.at/BRZPROD/" target="_blank"> sokrates</a>
+                </p>
+            </li>
 
-        <li class="navli navactive"><p>
-            <a> support</a>
-        </p></li>
+            <li class="navli navactive">
+                <p>
+                    <a> support</a>
+                </p>
+            </li>
 
-        <li class="navli home"><p>
-            <a href="../">Bundesrealgymnasium Keplerstraße Graz</a>
-        </p></li>
+            <li class="navli home">
+                <p>
+                    <a href="../" id="addhtml" onclick="addHTML()">Bundesrealgymnasium Keplerstraße Graz</a>
+                </p>
+            </li>
 
         </ul>
         <br>
@@ -45,5 +55,18 @@
     <h1>IT-Support</h1>
     <p>Put support form here (Google Forms?)</p>
 </body>
+
+<script>
+    function addHTML() {
+
+        if (window.location.protocol == 'file:') {
+            var filename = document.getElementById("addhtml")
+            filename += "index.html"
+            document.getElementById("addhtml").href = filename;
+            console.log(filename);
+            return false;
+        }
+    }
+</script>
 
 </html>
