@@ -1,15 +1,25 @@
 let enableDebug = false;
 
-function debug() {
+function debug(y) {
     var x = getCookie("isDebug");
     if(x == "true") {
         console.log("Set background");
+        for(let i = y; i > 0; i--) {
+        switch (i) {
+        case 1: 
         document.getElementById("debug1").style = "background-color: blue"
+          break;
+        case 2: 
         document.getElementById("debug2").style = "background-color: red"
+          break;
+        }
+      }
     } else {
         console.log("No background");
-        document.getElementById("debug1").style = "background: none"
-        document.getElementById("debug2").style = "background: none"
+
+        for(let i = y; i > 0; i--) {
+          document.getElementById("debug" + i).style = "background: none"
+        }
     }
 }
 
