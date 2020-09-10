@@ -17,7 +17,7 @@
 
 <!--h1: 2em | h2: 1.5em-->
 
-<body>
+<body onload="debug()">
 
         <div class="navbar url">
             <ul class="navul">
@@ -46,17 +46,20 @@
             </ul>
             <br>
         </div>
-
-          <div class="split left">
+        
+          <div class="split left" id="debug1">
             <img src="img/pictures/top_titel.jpg" style="font-size:2em" draggable="false" class="noselect">
-            <p>this is left</p>
+
         </div>
-        <div class="split right">
-            <p>this is right</p>
+
+
+        <div class="split right" id="debug2">
+            
         </div>
 
 </body>
 
 <script src="js/addToURL.js"></script>
+<script src="js/main.js"></script>
 
 </html>
