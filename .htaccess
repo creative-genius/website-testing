@@ -12,3 +12,6 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 # place code for /html/support.html to /support
+RewriteCond %{HTTP_HOST} (.*)
+RewriteCond %{REQUEST_URI} /html/support.html
+RewriteRule ^(.*)$ %1/support? [R=301,L]
