@@ -3,13 +3,27 @@
     width: 50%;
     position: fixed;
     z-index: 1;
-    top: 0;
     overflow-x: hidden;
     padding-top: 15px;
   }
+
+
+.split img{
+  position: relative;
+  top: 25px;
+}
+
+.left img {
+  margin-left:10px;
+}
+
+.right img {
+  margin-right:10px;
+}
   
   .left {
     left: 10px;
+    text-align: left;
   }
   
   .right {
