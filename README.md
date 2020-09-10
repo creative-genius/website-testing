@@ -8,8 +8,9 @@
 >   - [x] Folder structure
 >   - [x] Favicon
 >   - [x] Navbar
->   - [ ] css (Working...)
->   - [ ] Layout
+>   - [ ] css (Working on it....)
+>   - [ ] Layout (Working on it....)
 >   - [ ] transfer old stuff
+>   - [ ] learn some .htaccess because it's dumb and we need it duh..
 
 ###### Internal Note: only lower case letters and underscores for filenames, non-devs please ignore HTML-Comments as these are only used to tell other devs what's going on. [[CLICK ME]](https://creative-genius.github.io/website-testing)
