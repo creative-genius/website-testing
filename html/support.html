@@ -44,7 +44,7 @@
 
             <li class="navli home">
                 <p>
-                    <a href="../" id="addhtml" onclick="addHTML()">Bundesrealgymnasium Keplerstraße Graz</a>
+                    <a href="../" id="addindex" onclick="addIndex()">Bundesrealgymnasium Keplerstraße Graz</a>
                 </p>
             </li>
 
@@ -54,19 +54,9 @@
 
     <h1>IT-Support</h1>
     <p>Put support form here (Google Forms?)</p>
+
 </body>
 
-<script>
-    function addHTML() {
-
-        if (window.location.protocol == 'file:') {
-            var filename = document.getElementById("addhtml")
-            filename += "index.html"
-            document.getElementById("addhtml").href = filename;
-            console.log(filename);
-            return false;
-        }
-    }
-</script>
+<script src="../js/addToURL.js"></script>
 
 </html>
