@@ -20,15 +20,10 @@
 >     Number tells the function how many debug background objects there are.
 >     To highlight an elements background use ```<div id="debug1"></div>   <div id="debug2"></div>``` and so on.
 >      Switch states in console with ```setDebug(true)``` or ```setDebug(false)``` - (Will be stored as cookie for 10 days)
-<br>
-<br>
->   - ```addHTML()``` - usage: ```<a href="html/support" id="addhtml" onclick="addHTML()"> support</a> ``` 
-<br>
+>   - ```addHTML()``` - usage: ```<a href="html/support" id="addhtml" onclick="addHTML()"> support</a> ```  
 >       Object has to contain ```id="addhtml"```, also the *href* should not contain *.html*. Will only work for ***127.0.0.1*** or ***file://***
-<br>
-<br>
->   - ```addIndex()``` - usage: ```<a href="../" id="addindex" onclick="addIndex()">Bundesrealgymnasium Keplerstraße Graz</a> ``` 
-<br>
+> 
+>    - ```addIndex()``` - usage: ```<a href="../" id="addindex" onclick="addIndex()">Bundesrealgymnasium Keplerstraße Graz</a> ```
 >       Object has to contain ```id="addindex"```, also the *href* should not contain *index.html*. Will only work for ***127.0.0.1*** or ***file://***
 
 <br>
