@@ -27,7 +27,7 @@ function setDebug(tmp) {
     enableDebug = tmp;
     console.log(enableDebug);
     setCookie("isDebug", enableDebug, 10);
-    debug();
+    location.reload();
 }
 
 function getCookie(cname) {
